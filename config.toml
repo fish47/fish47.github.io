@@ -1,0 +1,71 @@
+baseURL = "http://fish47.github.io"
+title = "背泳的鱼"
+enableEmoji = true
+enableRobotsTXT = true
+theme = "jane"
+
+canonifyURLs = true
+enableGitInfo = true
+hasCJKLanguage = true
+paginate = 10
+rssLimit = 20
+
+defaultContentLanguage = "zh-cn"
+[Languages.zh-cn]
+  languageCode = "zh-cn"
+
+[author]
+  name = "背泳的鱼"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]
+  name = "首页"
+  weight = 10
+  identifier = "home"
+  url = "/"
+
+[[menu.main]]
+  name = "归档"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+
+[[menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+
+[[menu.main]]
+  name = "分类"
+  weight = 40
+  identifier = "categories"
+  url = "/categories/"
+
+[[menu.main]]
+  name = "关于"
+  weight = 50
+  identifier = "about"
+  url = "/about/"
+
+[params]
+  since = "2019"
+  homeFullContent = false
+  rssFullContent = true
+  mainSections = ["post"]
+  dateFormatToUse = "2006-01-02"
+
+  toc = false
+  photoswipe = true
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+
+  customCSS = []
+  customJS = []
+
+  [params.social]
+    a-email = "fish47@126.com"
+    g-github = "http://github.com/fish47"
