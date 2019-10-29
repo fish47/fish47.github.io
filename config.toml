@@ -10,6 +10,8 @@ hasCJKLanguage = true
 paginate = 10
 rssLimit = 20
 
+ignoreFiles = [ "\\.py$", "\\.pyc$" ]
+
 defaultContentLanguage = "zh-cn"
 [Languages.zh-cn]
   languageCode = "zh-cn"
