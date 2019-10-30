@@ -12,6 +12,10 @@ rssLimit = 20
 
 ignoreFiles = [ "\\.py$", "\\.pyc$" ]
 
+PygmentsCodeFences = true
+PygmentsUseClasses = true
+PygmentsOptions = "linenos=table"
+
 defaultContentLanguage = "zh-cn"
 [Languages.zh-cn]
   languageCode = "zh-cn"
