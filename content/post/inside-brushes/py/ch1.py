@@ -2,28 +2,14 @@
 
 import numpy
 
-import matplotlib.pyplot as pyplot
 import matplotlib.patches as patches
 import matplotlib.transforms as transforms
 
 from matplotlib.path import Path
 from matplotlib.image import BboxImage
 
+from _utils import *
 from _points import *
-
-
-def create_subplots(row, col, *args, **kwargs):
-    fig_w = col * 6
-    fig_h = row * 4
-    return pyplot.subplots(row, col,
-                           sharex=True, sharey=True,
-                           tight_layout=True, figsize=(fig_w, fig_h),
-                           *args, **kwargs)
-
-
-def save_and_close_figure(fig, path):
-    fig.savefig(path)
-    pyplot.close(fig)
 
 
 def draw_intro_filter():
