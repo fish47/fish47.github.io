@@ -9,10 +9,7 @@ def __do_gen_points(bits):
 
 
 def __plot_point(axs, text, xy, xytext):
-    axs.plot(*xy, 'o')
-    axs.annotate(text, xy=xy, xytext=xytext,
-                 textcoords='offset points',
-                 size='x-large')
+    annotate_point(axs, text, xy, xytext, 'o')
 
 
 def dash_from_to(axs, from_xy, to_xy):

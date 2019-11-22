@@ -572,7 +572,6 @@ def __gen_segment(points, split_factor):
 def __gen_stamp(points, step):
     last_stamp_x = None
     last_stamp_y = None
-    used = 0
     remainder = 0
     for x, y in points:
         if last_stamp_x is None:
