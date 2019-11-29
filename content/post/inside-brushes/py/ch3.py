@@ -267,29 +267,6 @@ def __get_vec_len(vec_x, vec_y):
     return math.sqrt(vec_x * vec_x + vec_y * vec_y)
 
 
-def __plot_arc_arrow(axs, sx, sy, cx, cy, ex, ey):
-    __rad_factor = 0.5
-    vec_from_x = sx - cx
-    vec_from_y = sy - cy
-    vec_to_x = ex - cx
-    vec_to_y = ey - cy
-    rad_from = math.atan2(vec_from_y, vec_from_x)
-    rad_to = math.atan2(vec_to_y, vec_to_x)
-    rad_delta = (rad_to - rad_from) * __rad_factor
-
-    arrow_start = (sx, sy)
-    arrow_end = (ex, ey)
-    conn_style = patches.ConnectionStyle.Arc3(rad=rad_delta)
-    conn_style.connect(arrow_start, arrow_end)
-
-    arrow_style = patches.ArrowStyle.Simple(head_width=4, head_length=6)
-    arrow = patches.FancyArrowPatch(arrow_start, arrow_end,
-                                    arrowstyle=arrow_style,
-                                    connectionstyle=conn_style,
-                                    color="k")
-    axs.add_patch(arrow)
-
-
 def __do_draw_remainder(points, limits, stamp_step, file_name):
     def __eq(a, b):
         return abs(a - b) < 0.0001
@@ -367,7 +344,7 @@ def __do_draw_remainder(points, limits, stamp_step, file_name):
 
         axs.plot(x_list, y_list, style)
         for args in arc_args:
-            __plot_arc_arrow(axs, *args)
+            add_arc_arrow_patch(axs, 'k', *args)
 
     def __find_last_bend_point(points, step):
         last_vec_x = None

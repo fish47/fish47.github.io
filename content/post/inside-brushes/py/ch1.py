@@ -56,20 +56,7 @@ def _draw_bezier_curves(axs, bits, color):
     axs.add_patch(p)
 
 
-def __iter_stamp_rects(axs, points, fn, *args):
-    # 插入图形后，视图位置会莫名奇妙地改变，先备份一下
-    x_lim = axs.get_xlim()
-    y_lim = axs.get_ylim()
-
-    for x, y, rad in points:
-        fn(axs, x, y, rad, *args)
-
-    # 恢复视图位置
-    axs.set_xlim(x_lim)
-    axs.set_ylim(y_lim)
-
-
-def __draw_rect(axs, x, y, rad, size, color):
+def __draw_rect(axs, _, x, y, rad, size, color):
     center_x = x - size / 2
     center_y = y - size / 2
     pos = (center_x, center_y)
@@ -83,7 +70,7 @@ def __draw_rect(axs, x, y, rad, size, color):
     axs.add_patch(rect)
 
 
-def __draw_mosaic(axs, x, y, rad, size, data):
+def __draw_mosaic(axs, _, x, y, rad, size, data):
     half_size = size / 2
     trans = transforms.Affine2D()\
         .translate(-half_size, -half_size)\
@@ -96,12 +83,12 @@ def __draw_mosaic(axs, x, y, rad, size, data):
 
 
 def _draw_stamp_rects(axs, points, size, color):
-    __iter_stamp_rects(axs, points, __draw_rect, size, color)
+    iter_stamp_rects(axs, points, __draw_rect, size, color)
 
 
 def _draw_stamp_textures(axs, points, size):
     data = numpy.random.rand(16, 16)
-    __iter_stamp_rects(axs, points, __draw_mosaic, size, data)
+    iter_stamp_rects(axs, points, __draw_mosaic, size, data)
 
 
 def draw_intro_control_points():
