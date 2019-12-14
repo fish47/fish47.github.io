@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>背泳的鱼</title>
+    <link>https://fish47.github.io/</link>
+    <description>Recent content on 背泳的鱼</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 09 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://fish47.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>https://fish47.github.io/post/</link>
+      <pubDate>Mon, 09 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fish47.github.io/post/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://fish47.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fish47.github.io/about/</guid>
+      
+        <description>&lt;h3 id=&#34;heading&#34;&gt;业余折腾过什么&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;主力系统是&lt;code&gt;ArchLinux&lt;/code&gt;，偶尔弄一些桌面和开发环境的配置&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;Leetcode&lt;/code&gt;刷题顺便学&lt;code&gt;C/C++&lt;/code&gt;，代码详见&lt;a href=&#34;https://github.com/fish47/leetcode&#34;&gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;Lua&lt;/code&gt;写了个基于&lt;code&gt;MPV&lt;/code&gt;的弹幕加载插件，代码详见&lt;a href=&#34;https://github.com/fish47/MPVDanmakuLoader&#34;&gt;github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;大学时自学单片机，毕业设计做基于&lt;code&gt;V-USB&lt;/code&gt;的机械键盘&lt;/li&gt;
+&lt;li&gt;修过很多电子产品，包括手机、平板、笔记本、智能手表、&lt;code&gt;PSV&lt;/code&gt;、&lt;code&gt;3DS&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>
